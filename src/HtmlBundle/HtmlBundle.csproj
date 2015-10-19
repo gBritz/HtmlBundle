@@ -35,7 +35,15 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checker.cs" />
+    <Compile Include="CompileType.cs" />
+    <Compile Include="CompilerTaskFactory.cs" />
+    <Compile Include="FileContent.cs" />
+    <Compile Include="ICompilerTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriptTagCompiler.cs" />
+    <Compile Include="StreamTemplateGenerator.cs" />
+    <Compile Include="TemplateGenerator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
