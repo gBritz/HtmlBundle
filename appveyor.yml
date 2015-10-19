@@ -18,14 +18,14 @@ environment:
     secure: 4xfEnh4H+d3Qng1OkqqtWKa9TpQL41xIUldA+1kjyPutG6IEV9vhZ8GGn5QsrlbW
 
 before_build:
-  - nuget restore HtmlBundle.sln
+  - nuget restore src\HtmlBundle.sln
 
 build:
-  project: HtmlBundle.sln
+  project: src\HtmlBundle.sln
   verbosity: minimal
 
 test_script:
-  - OpenCover.Console.exe -register:user -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" -targetargs:"\"HtmlBundle.Test\bin\Release\HtmlBundle.Test.dll\" /logger:Appveyor" -skipautoprops -filter:"+[HtmlBundle*]*" -output:coverage.xml
+  - OpenCover.Console.exe -register:user -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe" -targetargs:"\"src\HtmlBundle.Test\bin\Release\HtmlBundle.Test.dll\" /logger:Appveyor" -skipautoprops -filter:"+[HtmlBundle*]*" -output:coverage.xml
   - coveralls.net --opencover coverage.xml
 
 artifacts:
