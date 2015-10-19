@@ -38,6 +38,7 @@
     <Compile Include="Checker.cs" />
     <Compile Include="CollapseWhitespaceCompiler.cs" />
     <Compile Include="CompileType.cs" />
+    <Compile Include="RemoveHtmlCommentsCompiler.cs" />
     <Compile Include="TaskCompilerFactory.cs" />
     <Compile Include="FileContent.cs" />
     <Compile Include="ITaskCompiler.cs" />

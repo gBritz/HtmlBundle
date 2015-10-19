@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="CheckerTest.cs" />
     <Compile Include="CollapseWhitespaceCompilerTest.cs" />
+    <Compile Include="RemoveHtmlCommentsCompilerTest.cs" />
     <Compile Include="TaskCompilerFactoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptTagCompilerTest.cs" />
