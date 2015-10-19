@@ -1,6 +1,6 @@
 ﻿namespace HtmlBundle
 {
-    public interface ICompilerTask
+    public interface ITaskCompiler
     {
         FileContent Compile(FileContent file);
     }

@@ -5,13 +5,13 @@ using System;
 namespace HtmlBundle.Test
 {
     [TestClass]
-    public class CompilerTaskFactoryTest
+    public class TaskCompilerFactoryTest
     {
         [TestMethod]
         public void Given_all_compiler_types_result_should_not_be_null()
         {
             var types = Enum.GetValues(typeof(CompileType));
-            var factory = new CompilerTaskFactory();
+            var factory = new TaskCompilerFactory();
 
             foreach (var type in types)
             {
@@ -23,7 +23,7 @@ namespace HtmlBundle.Test
         [TestMethod]
         public void When_type_is_HtmlTemplateTag_result_should_be_of_type_ScriptTagCompiler()
         {
-            var factory = new CompilerTaskFactory();
+            var factory = new TaskCompilerFactory();
             factory.CreateInstance(CompileType.HtmlTemplateTag)
                 .Should().BeOfType<ScriptTagCompiler>();
         }

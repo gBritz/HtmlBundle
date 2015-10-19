@@ -2,9 +2,9 @@
 
 namespace HtmlBundle
 {
-    public class CompilerTaskFactory
+    public class TaskCompilerFactory
     {
-        public ICompilerTask CreateInstance(CompileType type)
+        public ITaskCompiler CreateInstance(CompileType type)
         {
             switch (type)
             {

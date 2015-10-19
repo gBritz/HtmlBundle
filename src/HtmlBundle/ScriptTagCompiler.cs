@@ -3,7 +3,7 @@ using System.Text;
 
 namespace HtmlBundle
 {
-    public class ScriptTagCompiler : ICompilerTask
+    public class ScriptTagCompiler : ITaskCompiler
     {
         private static readonly String BeginTag = "<script type=\"text/ng-template\" id=\"{0}\">";
         private static readonly String EndTag = "</script>";

@@ -37,9 +37,9 @@
   <ItemGroup>
     <Compile Include="Checker.cs" />
     <Compile Include="CompileType.cs" />
-    <Compile Include="CompilerTaskFactory.cs" />
+    <Compile Include="TaskCompilerFactory.cs" />
     <Compile Include="FileContent.cs" />
-    <Compile Include="ICompilerTask.cs" />
+    <Compile Include="ITaskCompiler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScriptTagCompiler.cs" />
     <Compile Include="StreamTemplateGenerator.cs" />
